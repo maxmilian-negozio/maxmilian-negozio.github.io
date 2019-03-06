@@ -1,0 +1,269 @@
+
+body {
+  background-color:#151515;
+  color: #abacae;
+  font-family: Brown;
+  font-size: 1.3em;
+}
+
+.responsive-img {
+  max-width: 100%;
+}
+
+
+/* ******** HEADER ********* */
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.logo{
+  padding: 0em 1em;
+  margin: 1em 0em;
+  width: auto;
+  text-align: center
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr 3fr 3fr 1fr;
+  background-color: #101010;
+  text-align: center;
+  align-items: center;
+}
+
+.menu-text{
+  font-size: 1.2em;
+}
+
+.search-icon{
+  text-align: right;
+}
+
+
+/* ******** MAIN BODY ********* */
+.font-face {
+  font-family: "Brown";
+  src: url("../font/brown-regular-webfont.woff") format("woff")
+  }
+  
+.body-image-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.body-image{
+  width: 100%; 
+  height: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  /* padding: 0 4px; */
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  position: relative;
+  text-align: center;
+  color: white;
+  /* padding: 0 4px; */
+}
+
+.column img {
+  /* margin-top: 8px; */
+  vertical-align: middle;
+}
+
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 20px;
+  left: 26px;
+  font-size: 3vw;
+}
+
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3vw;
+}
+
+
+.h1{
+  text-align: center;
+  font-size:4.6vw;
+  color: #abacae; 
+}
+
+.body-image{
+  align-items: center;
+  height: auto;
+}
+
+.body-para1{
+  background-color: #101010;
+  font-size: .8em;
+  padding: 4em 4em;
+  text-align: justify;
+}
+
+.body-para2{
+  background-color: #171717;
+  font-size: .8em;
+  padding: 4em;
+  text-align: center;
+}
+
+/* ******** FOOTER ********* */
+
+.footer-end{
+  background-color: #101010;
+  font-size: 1em;
+  /* padding: 4em; */
+  padding-bottom: 2em;
+
+}
+
+.footer-grid1{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  padding: 1em;
+
+}
+
+.footer-grid1-1{
+  text-align: left;
+}
+
+.footer-grid1-2{
+  text-align: center;
+}
+
+.footer-grid1-3{
+  text-align: right;
+}
+
+.footer-grid2{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  padding-top: 3em;
+  padding-left: 1em;
+  padding-right: 1em;
+  
+}
+
+.footer-grid2-1{
+  text-align: left;
+}
+
+.footer-grid2-2{
+  text-align: right;
+}
+
+.app-icons{
+  padding: 0 .7em;
+}
+
+
+
+
+
+@media screen and (max-width:700px) {
+.menu{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+  padding: 1em;
+  font-size: .5em;
+}
+
+.footer-end{
+  background-color: #101010;
+  font-size: .7em;
+  /* padding: 4em; */
+  padding-bottom: 2em;
+}
+
+.app-icons{
+  padding: 0 0em;
+}
+
+.body-para1{
+  background-color: #101010;
+  font-size: .8em;
+  padding: 12px;
+  text-align: justify;
+}
+
+
+.logo{
+  padding: 0em 1em;
+  margin: 1em 0em;
+  width: auto;
+  text-align: center;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: 3fr;
+  background-color: #101010;
+  text-align: center;
+  align-items: center;
+}
+
+#search-icon{
+  display: none;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: 3fr;
+  align-items: center;
+}
+
+.menu-text{
+  font-size: 0em;
+}
+
+}
+
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+  #primary { width:67%; 
+  }
+
+  #secondary { width:30%; 
+  margin-left:3%;}  
+}
+
+
+/* Tabled Portrait
+@media screen and (max-width: 768px) {
+  #primary { 
+  width:100%; }
+
+  #secondary {
+  width:100%; 
+  margin:0; 
+  border:none; 
+}
+
+} */
